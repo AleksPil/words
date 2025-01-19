@@ -1,0 +1,54 @@
+.avatar {
+  background-image: url('../library/unnamed.jpg');
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 999;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 9%);
+}
+.rightBlock {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  justify-content: space-between;
+  margin: 0 25px 0 0;
+}
+.avatarWrapper {
+  display: flex;
+  align-items: center;
+}
+.nameText {
+  text-align: end;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 10px 0 0;
+}
+.firstName {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+}
+.exitWrapper {
+  display: flex;
+  align-items: center;
+}
+.exitText {
+  margin: 0 7px 0 0;
+}
+.leftBlock {
+  margin: 0 0 0 20px;
+}
+.arrowClass {
+  fill: #0093FF;
+}

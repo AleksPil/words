@@ -1,0 +1,10 @@
+.bodyWrapper {
+  background-color: #F3F2EE;
+  display: grid;
+  grid-template-columns: minmax(auto, 94%);
+  justify-content: center;
+  grid-gap: 1rem;
+  gap: 1rem;
+  position: relative;
+  height: calc(100dvh - 1.875rem);
+}

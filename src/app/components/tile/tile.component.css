@@ -1,0 +1,72 @@
+.tileFil {fill:#959597}
+.controlWrapper {
+  display: flex;
+  width: 40px;
+  justify-content: space-between;
+}
+.bodyTile {
+  width: 70%;
+  height: 350px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%), 0 2px 3px 0 rgb(0 0 0 / 9%);
+  padding: 20px;
+}
+.bodyTile:hover {
+  cursor: pointer;
+}
+.bodyText {
+  height: 83%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+}
+.rightControlBox {
+  display: flex;
+  justify-content: end;
+}
+.selectButton, .removeButton:hover {
+  cursor: pointer;
+}
+.tileWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 45px 0 0 0;
+}
+.textTile {
+  width: 73%;
+  padding: 20px;
+  font-size: 18px;
+}
+.arrowRightPaginator {
+  transform: scale(-1,1)
+}
+.paginatorButtonBlock {
+  display: flex;
+  min-width: 225px;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+}
+.leftPaginatorButton, .rightPaginatorButton {
+  height: 50px;
+  width: 60px;
+  background-color: #eef3f9;
+  border: 2px solid #a5a5a5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftPaginatorButton, .rightPaginatorButton:hover {
+  cursor: pointer;
+}
+.textPaginator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #959597;
+}

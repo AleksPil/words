@@ -5,6 +5,14 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@services/*": ["src/app/services/index"],
+      "@components": ["src/app/components/index"],
+      "@library/*": ["src/app/library/index"],
+      "@models/*": ["src/app/models/index"],
+      "@screens/*": ["src/app/screens/index"]
+    },
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,

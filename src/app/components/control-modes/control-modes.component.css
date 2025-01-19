@@ -1,0 +1,21 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonClass {
+  border: 2px solid #BEC2C3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #EEF3F9;
+  height: 45.6px;
+  width: 45.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tileFil {fill:#959597}
+.buttonClass:hover {
+  cursor: pointer;
+  border: 2px solid #a5a5a5;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 9%);
+}

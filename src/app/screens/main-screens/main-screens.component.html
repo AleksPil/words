@@ -1,0 +1,18 @@
+<div class="mainScreenWrapper">
+  <div class="firstBlock">
+    <div class="leftBlock">
+      <app-input></app-input>
+      <app-select></app-select>
+    </div>
+    <div class="rightBlock">
+      <div class="modes">
+        <app-control-modes></app-control-modes>
+      </div>
+      <app-selected-button></app-selected-button>
+    </div>
+  </div>
+  <div class="secondBlock">
+    <app-tile></app-tile>
+    <app-group-tiles *ngFor="tileOrGroupTiles"></app-group-tiles>
+  </div>
+</div>

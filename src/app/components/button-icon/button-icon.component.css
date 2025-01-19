@@ -1,0 +1,14 @@
+.buttonFil0 {fill:#939592;fill-rule:nonzero}
+.buttonWrapper {
+  height: 35px;
+  width: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.buttonWrapper:hover {
+  cursor: pointer;
+  background-color: #e0e8f1;
+}
