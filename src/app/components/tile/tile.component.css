@@ -5,15 +5,20 @@
   justify-content: space-between;
 }
 .bodyTile {
-  width: 70%;
+  width: 95%;
   height: 350px;
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%), 0 2px 3px 0 rgb(0 0 0 / 9%);
   padding: 20px;
-}
-.bodyTile:hover {
-  cursor: pointer;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*cursor: pointer;*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .bodyText {
   height: 83%;
@@ -23,12 +28,31 @@
   justify-content: center;
   font-size: 44px;
 }
+.bodyText:hover {
+  cursor: pointer;
+}
 .rightControlBox {
   display: flex;
   justify-content: end;
 }
-.selectButton, .removeButton:hover {
+.selectButton, .removeButton {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.selectButton:hover, .removeButton:hover {
   cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%), 0 2px 3px 0 rgb(0 0 0 / 9%);
+}
+
+.selectButton:hover .selectPath {
+  fill: rgba(248, 162, 2, 0.6);
+}
+.removeButton:hover .removePath {
+  fill: rgb(255, 106, 0);
 }
 .tileWrapper {
   display: flex;
@@ -37,7 +61,7 @@
   margin: 45px 0 0 0;
 }
 .textTile {
-  width: 73%;
+  width: 83%;
   padding: 20px;
   font-size: 18px;
 }
@@ -48,7 +72,7 @@
   display: flex;
   min-width: 225px;
   justify-content: space-between;
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
 }
 .leftPaginatorButton, .rightPaginatorButton {
   height: 50px;
@@ -69,4 +93,33 @@
   justify-content: center;
   font-size: 18px;
   color: #959597;
+}
+
+.bodyTile {
+  transform: scaleX(0.5);
+}
+/*---------------------------animation style-----------------*/
+.tp-wrapper {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+.boxWrapper {
+  position: relative;
+  width: 780px;
+  height: 390px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform         : transform 1s;
+  -ms-transform         : transform 1s;
+  transform         : transform 1s;
+}
+.tp-box__front {
+  -webkit-transform : rotateY(0deg);
+  -ms-transform     : rotateY(0deg);
+  transform         : rotateY(0deg);
+}
+.tp-box__back {
+  -webkit-transform : rotateY(-180deg);
+  -ms-transform     : rotateY(-180deg);
+  transform         : rotateY(-180deg);
 }

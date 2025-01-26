@@ -1,0 +1,75 @@
+.footerWrapper {
+  background-color: #282A35;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+.copyrightText {
+  color: #ffffff;
+  font-size: 10px;
+}
+:host ::ng-deep app-logo .fil0 {
+  fill: #f0f8ff;
+}
+:host ::ng-deep app-logo .fil1 {
+  fill: #8a8a8a;
+}
+:host ::ng-deep app-logo .fil2 {
+  fill: #f0f8ff;
+}
+:host ::ng-deep app-logo .fil3 {
+  fill: #f0f8ff;
+}
+:host ::ng-deep app-logo .fil4 {
+  fill: #8a8a8a;
+}
+:host ::ng-deep app-logo svg {
+  width: 24mm;
+}
+.upBlock {
+  display: flex;
+}
+.titleFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0 10px 0 50px;
+}
+.contact, .business, .projects {
+  color: #FFE77C;
+}
+.contact:hover, .business:hover, .projects:hover {
+  cursor: pointer;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFE77C;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+.hover-underline-animation.center::after {
+  transform-origin: bottom center;
+}
+.logoFil1 {fill:#282A35}
+.logoFil0 {fill:white}
+.socialMedia {
+  display: flex;
+  align-items: center;
+  width: 103px;
+  justify-content: space-between;
+}
