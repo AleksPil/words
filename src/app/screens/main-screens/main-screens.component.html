@@ -12,7 +12,11 @@
     </div>
   </div>
   <div class="secondBlock">
-    <app-tile></app-tile>
-    <app-group-tiles *ngFor="tileOrGroupTiles"></app-group-tiles>
+    @for (item of wordsData;track item) {
+      <app-tile></app-tile>
+
+      <!--    <app-group-tiles></app-group-tiles>-->
+    }
+
   </div>
 </div>

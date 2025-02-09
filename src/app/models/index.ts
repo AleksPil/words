@@ -1,1 +1,2 @@
-// export * from './logo/logo.component'
+export * from './class/wordsData';
+export * from './class/infoObj';

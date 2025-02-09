@@ -1,2 +1,10 @@
 export * from './logo/logo.component'
 export * from './svg-icon/svg-icon.component'
+export * from './input/input.component'
+export * from './tile/tile.component'
+export * from './select/select.component'
+export * from './button-icon/button-icon.component'
+export * from './control-modes/control-modes.component'
+export * from './group-tiles/group-tiles.component'
+export * from './selected-button/selected-button.component'
+

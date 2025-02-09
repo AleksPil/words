@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MatRipple} from '@angular/material/core';
+import { MatRipple } from '@angular/material/core';
 
 @Component({
   selector: 'app-button-icon',

@@ -32,3 +32,21 @@ label > .icon {
   stroke: currentColor;
   fill: currentColor;
 }
+::ng-deep .mat-mdc-fab {
+  background-color: #eef3f9!important;
+  border-radius: 30px!important;
+  color: #959597!important;
+  box-shadow: unset!important;
+}
+.downloadButton {
+  position: absolute;
+  height: 33px;
+  width: 33px;
+  right: 5px;
+  top: -7px;
+}
+.alert {
+  color: #ff0000;
+  font-size: 13px;
+  padding: 0 0 0 5px;
+}

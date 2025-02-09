@@ -1,4 +1,12 @@
-<label class="name-label">
-  <app-button-icon class="icon icon-user"></app-button-icon>
-  <input #message maxlength="256" class="inputValue" type="text" id="fname" placeholder="download words">
-</label>
+<form [formGroup]="myForm" novalidate (ngSubmit)="submit()">
+  <label class="name-label">
+<!--    <app-button-icon class="icon icon-user"></app-button-icon>-->
+    <button mat-fab class="downloadButton" [disabled]="myForm.invalid">
+      <mat-icon>download</mat-icon>
+    </button>
+    <input autocomplete="off" name="upData" formControlName="upData" minlength="2" maxlength="100" class="inputValue" type="text" placeholder="download words">
+    @if(myForm.controls["upData"].invalid && myForm.controls["upData"]['touched']){
+      <div class="alert">only letters</div>
+    }
+  </label>
+</form>
